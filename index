@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Tvé jméno]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 30px 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            letter-spacing: 2px;
+            color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            backdrop-filter: blur(8px);
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile img:hover {
+            transform: scale(1.05);
+        }
+
+        .info {
+            margin-bottom: 30px;
+        }
+
+        .info p {
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            color: #ffd700;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        ul li:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #66ffff;
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact form {
+            margin-top: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            resize: vertical;
+            font-size: 1em;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #00cc99;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00b386;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+            font-size: 0.9em;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Moje Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <div class="profile">
+            
+            <div class="info">
+                <p><strong>Jméno:</strong> Matěj Janeček</p>
+                <p><strong>Věk:</strong> 18 let</p>
+                <p><strong>Datum narození:</strong> 13. 2. 2007</p>
+                <p><strong>Bydliště:</strong> Kobeřice</p>
+            </div>
+        </div>
+
+        <h2>Moje koníčky</h2>
+        <ul>
+            <li>Můj nejoblíbenější sport na který se dívam je Rally.</li>
+            <li>Hraju florbal už 9 let.</li>
+            <li>Velmi rád programuju aplikace i webovky.</li>
+        </ul>
+
+        <h2>Odkaz na můj GitHub</h2>
+        <p><a href="https://github.com/Janecekmates?tab=repositories" target="_blank">Klikni sem pro zobrazení mého GitHubu</a></p>
+
+        <h2>Kontakt</h2>
+        <div class="contact">
+            <p><strong>E-mail:</strong> <a href="https://outlook.office365.com/mail/sentitems">D22114@oaopava.cz</a></p>
+            <p><strong>Telefon:</strong> +420 602 879 425</p>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Matěj Janeček • Vytvořeno s láskou k webdesignu 💻
+    </footer>
+
+</body>
+</html>
